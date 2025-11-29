@@ -27,9 +27,10 @@
         Title="Gml.Launcher">
 
     <Grid>
-        <Border CornerRadius="5" ClipToBounds="True">
+        <Border CornerRadius="5" ClipToBounds="True" UseLayoutRounding="True">
             <Panel>
-                <ExperimentalAcrylicBorder IsHitTestVisible="False">
+                <ExperimentalAcrylicBorder IsHitTestVisible="False"
+                                            UseLayoutRounding="True">
                     <ExperimentalAcrylicBorder.Material>
                         <ExperimentalAcrylicMaterial
                             BackgroundSource="Digger"
@@ -39,15 +40,19 @@
                     </ExperimentalAcrylicBorder.Material>
                 </ExperimentalAcrylicBorder>
 
-                <Grid>
+                <Grid UseLayoutRounding="True">
                     <!-- Background -->
-                    <components:BackgroundComponent Classes="Image" Source="/Assets/Images/background.jpg" />
+                    <components:BackgroundComponent Classes="Image" 
+                                                    Source="/Assets/Images/background.jpg"
+                                                    UseLayoutRounding="True" />
 
-                    <Rectangle Fill="{DynamicResource BackgroundOverlay}" />
+                    <Rectangle Fill="{DynamicResource BackgroundOverlay}" 
+                               UseLayoutRounding="True" />
 
 
                     <!-- Content -->
-                    <rxui:RoutedViewHost Router="{Binding Router}">
+                    <rxui:RoutedViewHost Router="{Binding Router}"
+                                         UseLayoutRounding="True">
 
                         <rxui:RoutedViewHost.DefaultContent>
                             <TextBlock Text="Route not found"

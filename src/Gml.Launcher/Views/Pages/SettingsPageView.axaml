@@ -11,14 +11,12 @@
              d:DesignHeight="600"
              x:DataType="vm:SettingsPageViewModel"
              x:Class="Gml.Launcher.Views.Pages.SettingsPageView">
-    <Grid>
-        <!-- Background -->
-        <components:BackgroundComponent Grid.Column="0" />
+    <Grid UseLayoutRounding="True">
         <Border Padding="20">
-            <Grid ColumnDefinitions="350, 30, .6*, 30 0.2*" RowDefinitions="Auto, 30, *">
+            <Grid ColumnDefinitions="350, 30, .6*, 30, 0.2*" RowDefinitions="Auto, 30, *">
 
                 <!-- Navigation -->
-                <Grid Grid.ColumnSpan="3" Grid.Row="0">
+                <Grid Grid.ColumnSpan="5" Grid.Row="0">
                     <components:GmlButton Classes="TextIcon Additional"
                                           Padding="15, 0, 20 ,0"
                                           IconPath="/Assets/Images/back.svg"

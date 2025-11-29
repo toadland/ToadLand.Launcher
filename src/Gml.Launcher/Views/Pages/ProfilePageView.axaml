@@ -12,10 +12,10 @@
              x:DataType="vm:ProfilePageViewModel"
              x:Class="Gml.Launcher.Views.Pages.ProfilePageView">
 
-    <Grid>
+    <Grid UseLayoutRounding="True">
         <!-- Background -->
         <!-- <components:BackgroundComponent Grid.Column="0" /> -->
-        <Border Padding="20">
+        <Border Padding="20" UseLayoutRounding="True">
             <Grid ColumnDefinitions="350, 30, 0.65*" RowDefinitions="Auto, 30, *">
 
                 <!-- Navigation -->

@@ -11,7 +11,8 @@
         <Setter Property="Template">
             <ControlTemplate>
                 <Image Stretch="UniformToFill"
-                       Source="{TemplateBinding Source}" />
+                       Source="{TemplateBinding Source}"
+                       UseLayoutRounding="True" />
             </ControlTemplate>
         </Setter>
     </Style>
@@ -19,7 +20,8 @@
         <Setter Property="Template">
             <ControlTemplate>
                 <gif:GifImage Stretch="UniformToFill"
-                              SourceStream="{TemplateBinding SourceStream}" />
+                              SourceStream="{TemplateBinding SourceStream}"
+                              UseLayoutRounding="True" />
             </ControlTemplate>
         </Setter>
     </Style>

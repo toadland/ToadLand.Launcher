@@ -13,7 +13,7 @@
              x:Class="Gml.Launcher.Views.Pages.LoginPageView">
 
 
-    <Grid>
+    <Grid UseLayoutRounding="True">
 
         <!-- Background -->
         <!-- <components:BackgroundComponent /> -->
@@ -75,8 +75,7 @@
         <Border IsVisible="{Binding Is2FaVisible}"
                 Background="#80000000"
                 HorizontalAlignment="Stretch"
-                VerticalAlignment="Stretch"
-                ZIndex="100">
+                VerticalAlignment="Stretch">
             <components:StackFrameBorder VerticalAlignment="Center"
                                          HorizontalAlignment="Center"
                                          Width="350"

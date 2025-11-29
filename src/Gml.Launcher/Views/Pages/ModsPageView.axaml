@@ -9,16 +9,13 @@
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
              x:Class="Gml.Launcher.Views.Pages.ModsPageView"
              x:DataType="vm:ModsPageViewModel">
-    <Grid>
-        <!-- Background -->
-        <components:BackgroundComponent Classes="Image" Source="/Assets/Images/background.jpg" />
-        <Rectangle Fill="{DynamicResource BackgroundOverlay}" />
+    <Grid UseLayoutRounding="True">
 
         <Border Padding="20">
             <Grid RowDefinitions="Auto, 30, *">
 
                 <!-- Navigation -->
-                <Grid Grid.ColumnSpan="3" Grid.Row="0">
+                <Grid Grid.Row="0">
                     <components:GmlButton Classes="TextIcon Additional"
                                           Padding="15, 0, 20 ,0"
                                           IconPath="/Assets/Images/back.svg"
