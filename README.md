@@ -1,14 +1,15 @@
-![Frame 39263](https://github.com/user-attachments/assets/d69fae32-4339-4239-8950-133a89763a82)
-
-Gml (GamerVII Minecraft Launcher)
+Gml (ToadLand Minecraft Launcher)
 =======
+
+> **Note:** This is a fork of [Gml.Launcher](https://github.com/Gml-Launcher/Gml.Launcher) customized for ToadLand server.
+
 The Minecraft Launcher is a user-friendly application designed to streamline the process of launching Minecraft and managing game settings. It provides an intuitive interface and essential features to enhance the Minecraft gaming experience.
 
 ## Installation
 
 ### Prerequisites
 
-Before installing the GamerVII Launcher, ensure you have the following prerequisites:
+Before installing the ToadLand Launcher, ensure you have the following prerequisites:
 
 - **.NET 8.0 SDK:** You need to have .NET 8.0 SDK installed on your system. You can download it
   from [Microsoft's official website](https://dotnet.microsoft.com/download/dotnet/8.0) or use a package manager
@@ -17,17 +18,19 @@ Before installing the GamerVII Launcher, ensure you have the following prerequis
 - **Git:** Ensure Git is installed on your system. You can download it from
   the [Git website](https://git-scm.com/downloads) or use a package manager.
 
-### Steps to Install GamerVII Launcher
+### Steps to Install ToadLand Launcher
 
 1. **Clone the Repository:**
    Open a terminal and clone the repository using Git with the `--recursive` option:
+
    ```bash
-   git clone --recursive https://github.com/GamerVII-NET/minecraft-launcher.git
-   cd minecraft-launcher
+   git clone --recursive https://github.com/toadland/Gml.Launcher
+   cd gml.launcher
    ```
 
 2. **Build the Project:**
    Restore the dependencies and build the project using the .NET CLI:
+
    ```bash
    dotnet restore
    dotnet build
@@ -35,8 +38,9 @@ Before installing the GamerVII Launcher, ensure you have the following prerequis
 
 3. **Run the Launcher:**
    Once the project is built, you can run the launcher using the following command:
+
    ```bash
-   dotnet run --project path/to/your/project
+   dotnet run --project src/Gml.Launcher/Gml.Launcher.csproj
    ```
 
 ### Troubleshooting
@@ -51,7 +55,7 @@ For additional help, check the project's issue tracker or community forums.
 
 ### Updating
 
-To update the GamerVII Launcher to the latest version, navigate to the project directory and pull the latest changes
+To update the ToadLand Launcher to the latest version, navigate to the project directory and pull the latest changes
 from the repository:
 
 ```bash
@@ -62,10 +66,6 @@ dotnet build
 
 Then, run the launcher again using the command mentioned earlier.
 
-### Uninstallation
+## Credits
 
-To uninstall the GamerVII Launcher, simply delete the project directory:
-
-```bash
-rm -rf minecraft-launcher
-```
+This project is a fork of [Gml.Launcher](https://github.com/Gml-Launcher/Gml.Launcher) by [Gml-Launcher](https://github.com/Gml-Launcher). Adapted for ToadLand server.
